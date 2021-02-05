@@ -6,7 +6,7 @@ const AbonnementSchema = new mongoose.Schema({
     date1: {type: Date},
     montant: { type: Number},
     lastdate:{ type: Date},
-    modeDePaiement :{ type: String},
+    modeDePaiement:{ type: String},
 
 }, {
   timestamps: true,

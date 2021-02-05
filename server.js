@@ -10,8 +10,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 const abonnementRouter = require('./routes/abonnementRoutes');
-const entrepriseRouter = require('./routes/entrepriseRoutes');
-app.use('/entreprises',entrepriseRouter);
+const personnelRouter = require('./routes/personnelRoutes');
+app.use('/ personnel', personnelRouter);
 app.use('/abonnements',abonnementRouter);
     
     
