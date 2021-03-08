@@ -78,4 +78,5 @@ Travail distanciel
 
 
 Diagramme de classes : 
+![classe](https://user-images.githubusercontent.com/39216251/109538932-f05f0280-7ac0-11eb-8983-77f5a47e75fb.PNG)
 
