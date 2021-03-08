@@ -2,12 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
+const bcrypt = require ("bcryptjs");
 require('dotenv').config({path:'./config/.env'});
 const abonnementRoutes = require('./api/routes/abonnement');
 const personnelRoutes = require('./api/routes/personnel');
 const compteRoutes = require('./api/routes/compte');
 const factureRoutes = require('./api/routes/facture');
-
+const userRoutes = require('./api/routes/user')
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,6 +31,7 @@ app.use('/personnels', personnelRoutes);
 app.use('/abonnements',abonnementRoutes);
 app.use('/comptes',compteRoutes);
 app.use('/factures',factureRoutes );
+app.use('/user',userRoutes);
     
 //database 
 mongoose.connect(process.env.DB_CONNECTION,   {useUnifiedTopology: true,

@@ -36,7 +36,13 @@ router.get('/', (req, res, next) => {
       res.status(500).json({error:err});
     } );
   });
+ // POST 
+ router.post('/',(req,res, next) =>{
+
+ }) 
+
  router.post('/',(req, res, next) => {
+   
   const abonnement = new Abonnement ({
     
     firstdate:req.body.firstdate, 
@@ -74,6 +80,7 @@ router.get('/', (req, res, next) => {
       });
     });
  });
+ 
 
 
 module.exports = router;

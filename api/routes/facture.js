@@ -19,7 +19,8 @@ router.get('/', (req, res, next) => {
   });
   router.post('/',(req, res, next) => {
     const facture = new Facture({
-       date:req.body.date, reference:req.body.reference
+       date:req.body.date, 
+       reference:req.body.reference
   });
       
     
